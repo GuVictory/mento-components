@@ -1,1 +1,0 @@
-## Manto Components Storybook place
