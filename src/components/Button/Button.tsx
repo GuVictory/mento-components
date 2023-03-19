@@ -1,12 +1,13 @@
 import './Button.css';
 import { TButtonType, TButtonSize } from './types';
 
-type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-	view?: TButtonType;
-	size?: TButtonSize;
-	rounded?: boolean;
-	noXPadding?: boolean;
-};
+export type ButtonProps =
+	React.ButtonHTMLAttributes<HTMLButtonElement> & {
+		view?: TButtonType;
+		size?: TButtonSize;
+		rounded?: boolean;
+		noXPadding?: boolean;
+	};
 
 export const Button = ({
 	view = 'common',
