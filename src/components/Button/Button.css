@@ -1,0 +1,67 @@
+.button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: var(--border-radius-common);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.button:hover {
+    box-shadow: var(--main-box-shadow);
+    -webkit-box-shadow: var(--main-box-shadow);
+    -moz-box-shadow: var(--main-box-shadow);
+}
+
+.button:active {
+    box-shadow: var(--main-box-shadow-inner);
+    -webkit-box-shadow: var(--main-box-shadow-inner);
+    -moz-box-shadow: var(--main-box-shadow-inner);
+}
+
+.button_primary {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+
+.button_common {
+    background-color: var(--main-bg);
+    color: var(--secondary-text-color);
+    border: 1px solid var(--secondary-text-color);
+}
+
+.button_ghost {
+    color: var(--secondary-text-color);
+}
+
+.button_s {
+    padding: 5px 20px;
+}
+
+.button_m {
+    padding: 10px 20px;
+}
+
+.button_l {
+    padding: 15px 20px;
+}
+
+.button_rounded {
+    border-radius: var(--border-radius-full);
+}
+
+.button_noXPadding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.button:hover.button_noXPadding {
+    box-shadow: none;
+}
+
+.button:active.button_noXPadding{
+    box-shadow: none;
+}
